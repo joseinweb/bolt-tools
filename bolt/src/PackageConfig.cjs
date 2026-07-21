@@ -34,7 +34,7 @@ class PackageConfig {
       typeof config.name === "string") {
       return;
     } else {
-      throw new Error(`[Jose] Invalid config:\n ${JSON.stringify(config, null, 2)}`);
+      throw new Error(`Invalid config:\n ${JSON.stringify(config, null, 2)}`);
     }
   }
 

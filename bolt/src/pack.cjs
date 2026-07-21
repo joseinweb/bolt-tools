@@ -25,7 +25,7 @@ const { exec, execv, assertFile } = require('./utils.cjs');
 const { statSync, mkdirSync, rmSync, readFileSync } = require('node:fs');
 
 function validateConfig(config) {
-  if ((config.packageType === "base" || config.packageType === "runtime" || config.packageType === "application") &&
+  if ((config.packageType === "base" || config.packageType === "runtime" || config.packageType === "application" || config.packageType === "service") &&
     typeof config.id === "string" &&
     typeof config.version === "string" &&
     typeof config.versionName === "string" &&
