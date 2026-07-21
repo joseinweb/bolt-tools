@@ -33,6 +33,9 @@ function makeArtifactManifest(spec) {
     case 'base':
       imageTitle = 'base.tar.gz';
       break;
+    case 'service':
+      imageTitle = 'service.tar.gz';
+      break;
   }
 
   assert(imageTitle);
