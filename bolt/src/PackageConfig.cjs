@@ -26,7 +26,7 @@ class PackageConfig {
   }
 
   static validate(config) {
-    if ((config.packageType === "base" || config.packageType === "runtime" || config.packageType === "application") &&
+    if ((config.packageType === "base" || config.packageType === "runtime" || config.packageType === "application"  || config.packageType === "service") &&
       typeof config.id === "string" &&
       typeof config.version === "string" &&
       typeof config.entryPoint === "string" &&
